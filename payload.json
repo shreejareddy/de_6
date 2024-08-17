@@ -1,0 +1,14 @@
+{
+    "Records": [
+        {
+            "s3": {
+                "bucket": {
+                    "name": "user-activity-data-bucket"
+                },
+                "object": {
+                    "key": "user_activity_data.json"
+                }
+            }
+        }
+    ]
+}

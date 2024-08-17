@@ -1,0 +1,18 @@
+User Activity Tracking Pipeline
+Overview
+This project sets up an AWS-based pipeline to collect, process, and store user activity data.
+
+Components
+Data Collection Lambda Function: Uploads user activity data to an S3 bucket.
+Data Processing Lambda Function: Processes data from S3 and stores it in DynamoDB.
+AWS Step Functions: Orchestrates the Lambda functions for data handling.
+DynamoDB Table: Stores processed user activity data.
+Setup
+Create S3 Bucket: user-activity-data-bucket.
+Create DynamoDB Table: UserActivity with user_id (String) and session_id (String).
+Deploy Lambda Functions: Upload lambda_function.zip and lambda_processing.zip to AWS Lambda.
+Create Step Functions State Machine: Define workflow to run DataCollector and DataProcessor functions.
+Usage
+Upload data to S3 using the Data Collection Lambda.
+Data Processing Lambda will handle data automatically.
+Monitor and troubleshoot using CloudWatch.
